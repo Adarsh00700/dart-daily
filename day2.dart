@@ -20,6 +20,12 @@ void main() {
   print("$a  $b  $c are the numbers");
 
   print("$largestnumber is the largest number");
+
+  //odd or even
+
+  int x = 7;
+
+  print(oddoreven(x));
 }
 
 void checkEligibility(int age) {
@@ -45,5 +51,13 @@ num findlargest(num a, num b, num c) {
     return b;
   } else {
     return c;
+  }
+}
+
+String oddoreven(int x) {
+  if (x % 2 == 0) {
+    return "$x the Number is Odd";
+  } else {
+    return "$x is Even number";
   }
 }
